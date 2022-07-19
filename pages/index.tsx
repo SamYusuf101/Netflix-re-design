@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Banner from '../components/Banner'
 import requests from '../utils/requests'
 import { Movie } from '../typings'
+import Rows from '../components/Rows'
 
 interface Props{
   netflixOriginals  : Movie[]
@@ -33,8 +34,21 @@ const Home = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
+      <main className='relative pl-4 pb-24 lg:space-y-24 lg:pl-16'>
         <Banner netflixOriginals={netflixOriginals}/>
+        <section className="md:space-y-24">
+          <Rows title="Trending Now" movies={trendingNow} />
+          <Rows title="Top Rated" movies={topRated} />
+          <Rows title="Action Thrillers" movies={actionMovies} />
+          {/* My List */}
+          {/*{list.length > 0 && <Rows title="My List" movies={list} />}*/}
+
+          <Rows title="Comedies" movies={comedyMovies} />
+          <Rows title="Scary Movies" movies={horrorMovies} />
+          <Rows title="Romance Movies" movies={romanceMovies} />
+          <Rows title="Documentaries" movies={documentaries} />
+        </section>
+
       </main>
       
     </div>

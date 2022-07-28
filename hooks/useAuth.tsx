@@ -51,7 +51,7 @@ export const AuthProvider= ({children}: AuthProviderProps)=> {
               // Not logged in...
               setUser(null)
               setLoading(true)
-              router.push('/login')
+              router.push('/Login')
             }
     
             setInitialLoading(false)
@@ -74,7 +74,8 @@ export const AuthProvider= ({children}: AuthProviderProps)=> {
     const signIn = async (email: string, password:string) =>{
         setLoading(true)
 
-        await signInWithEmailAndPassword(auth, email, password).then((userCredential)=> {
+        await signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential)=> {
             setUser(userCredential.user)
             router.push('/')
             setLoading(false)

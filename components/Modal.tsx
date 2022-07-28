@@ -42,8 +42,6 @@ function Modal() {
     setShowModal(false);
   };
 
-  console.log(trailer);
-
   return (
     <MuiModal open={showModal} onClose={handleClose}>
       <>
@@ -52,17 +50,18 @@ function Modal() {
           className="modalButton absolute right-5 top-5 !z-40 h-9 w-9 border-none bg-[#181818]  hover:bg-[#181818]"
         >
           <XIcon className="h-6 w-6" />
-          <div>
-            <ReactPlayer
-              url={`https://www.youtube.com/watch?v=${trailer}`}
-              width="100%"
-              height="100%"
-              style={{ position: "absolute", top: "0", left: "0" }}
-              playing
-              muted={muted}
-            />
-          </div>
         </button>
+
+        <div className="relative pt-[56.25%]">
+          <ReactPlayer
+            url={`https://www.youtube.com/watch?v=${trailer}`}
+            width="100%"
+            height="100%"
+            style={{ position: "absolute", top: "0", left: "0" }}
+            playing
+            muted={muted}
+          />
+        </div>
       </>
     </MuiModal>
   );

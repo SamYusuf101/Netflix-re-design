@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import useAuth from "../hooks/useAuth";
@@ -9,7 +10,7 @@ interface Inputs {
   password: string;
 }
 
-function Login() {
+function LoginSignUp() {
   const [login, setLogin] = useState(false);
   const { signIn, signUp } = useAuth();
 
@@ -54,7 +55,7 @@ function Login() {
         className="relative mt-24 space-y-8 rounded bg-black/75 py-10 px-6 md:mt-0
       md:max-w-md md:px-14"
       >
-        <h1 className="text-4xl font-semibold">Sign Up</h1>
+        <h1 className="text-4xl font-semibold">Sign In</h1>
         <div className="space-y-4">
           <label className="inline-block w-full">
             <input
@@ -84,19 +85,23 @@ function Login() {
           </label>
         </div>
 
+        <button
+          className="py-2 px-2 w-full bg-[#e50914] hover:bg-[#384aec] rounded font-semibold"
+          onClick={() => setLogin(true)}
+        >
+          Sign In
+        </button>
         <div className="text-[gray]">
           New to Netflix? <br />
-          <button
-            type="submit"
-            className="text-white bg-[#e50914] w-full hover:bg-[#384aec] py-2 px-2 rounded "
-            onClick={() => setLogin(false)}
-          >
-            Sign up now
-          </button>
+          <Link href="/Login" passHref>
+            <button className="text-white bg-[#e50914] w-full hover:bg-[#384aec] py-2 px-2 rounded ">
+              Sign up now
+            </button>
+          </Link>
         </div>
       </form>
     </div>
   );
 }
 
-export default Login;
+export default LoginSignUp;

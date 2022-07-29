@@ -88,7 +88,7 @@ function Login() {
           className="py-2 px-2 w-full bg-[#e50914] hover:bg-[#384aec] rounded font-semibold"
           onClick={() => setLogin(true)}
         >
-          Sign In
+          Sign Inol
         </button>
         <div className="text-[gray]">
           New to Netflix? <br />

@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import useAuth from "../hooks/useAuth";
@@ -93,11 +92,13 @@ function Login() {
         </button>
         <div className="text-[gray]">
           New to Netflix? <br />
-          <Link href="/LoginSignUp" passHref>
-            <button className="text-white bg-[#e50914] w-full hover:bg-[#384aec] py-2 px-2 rounded ">
-              Sign up now
-            </button>
-          </Link>
+          <button
+            type="submit"
+            className="text-white bg-[#e50914] w-full hover:bg-[#384aec] py-2 px-2 rounded "
+            onClick={() => setLogin(false)}
+          >
+            Sign up now
+          </button>
         </div>
       </form>
     </div>

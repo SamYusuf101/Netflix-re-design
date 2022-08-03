@@ -1,23 +1,30 @@
-# Next.js + Tailwind CSS Example
+# Project Description
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is a re-design of the Netflix web-app...Built with next js(TypesCript) and tailwind-css. Firebase is used for userAuthentication.
 
-## Deploy your own
+## View demo on
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+https://netflix-redesign-samyusuf101.vercel.app
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+# Screenshots
 
-## How to use
+![netflix](images/home.png)
+![netflix](images/playMenu.png)
+![netflix](images/rows.png)
+![netflix](images/singIn.png)
+![netflix](images/singUp.png)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Installation and usage
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+Clone this repository
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+git clone https://github.com/SamYusuf101/Netflix-re-design.git
+
+## Install packages
+
+npm install
+npm run dev
+
+## Star, Fork, Clone & Contribute
+
+Feel free to contribute to this repository

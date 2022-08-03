@@ -23,7 +23,7 @@ git clone https://github.com/SamYusuf101/Netflix-re-design.git
 
 ## Install packages
 
-npm install
+npm install\
 npm run dev
 
 ## Star, Fork, Clone & Contribute

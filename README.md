@@ -7,9 +7,10 @@ This is a re-design of the Netflix web-app...Built with next js(TypesCript) and 
 https://netflix-redesign-samyusuf101.vercel.app
 
 # Screenshots
+![netflix](images/home.png)
+![netflix](images/playMenu.png)
+![netflix](images/rows.png)
 
-
-![netflix](images/singIn.png)
 
 
 ## Installation and usage

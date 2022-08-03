@@ -12,7 +12,7 @@ https://netflix-redesign-samyusuf101.vercel.app
 ![netflix](images/playMenu.png)
 ![netflix](images/rows.png)
 ![netflix](images/singIn.png)
-![netflix](images/singUp.png)
+![netflix](images/signUp.png.)
 
 ## Installation and usage
 
